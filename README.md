@@ -1,5 +1,49 @@
 # Getting Started with Create React App
 
+## React Project with JSON Server and Axios
+
+This project sets up a React app with a mock REST API using `json-server` and handles HTTP requests using `axios`.
+
+---
+
+## 🚀 Setup Instructions
+
+### 1. Create a React App
+
+Use `create-react-app` to generate a new React project named `16tut`:
+
+```bash
+npx create-react-app 16tut
+```
+
+### 2. Install the modules
+
+Use npm to install the necessary modules:
+
+```bash
+npm i axios -D
+npm i json-server -d
+```
+
+### 3. Start the json-server
+
+Use `json-server` API using the data which resides in data/db.json on port 3500.
+
+```bash
+npx json-server --watch data/db.json --port 3500
+```
+
+If any error comes just stop the server also kill the PIDs.
+
+### 4. Run Project server
+
+Run the project server which uses the above executed json-server.
+
+```bash
+npm start
+```
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
